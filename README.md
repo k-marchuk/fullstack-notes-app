@@ -17,12 +17,14 @@
 
 - Frontend:
   - Vite
-  - React.js
+  - React
+  - Typescript
   - axios
   - Tailwind CSS
 - Backend:
   - Node.js
   - Express.js
+  - Day.js
 
 ## Installation and run locally
 
@@ -52,7 +54,17 @@ To get started with this project, follow the steps below:
    npm install
    ```
 
-4. **Start the backend server:**:
+   By default, the server runs on http://localhost:5000
+
+4. **Set up environment variable:**:
+
+   The frontend expects an API URL configured via .env:
+
+   ```bash
+   VITE_API_URL=http://localhost:5000
+   ```
+
+5. **Start the backend server:**:
 
    ```bash
    cd backend
@@ -60,7 +72,7 @@ To get started with this project, follow the steps below:
    npm start
    ```
 
-5. **Start the frontend:**:
+6. **Start the frontend:**:
 
    ```bash
    cd frontend
@@ -68,4 +80,4 @@ To get started with this project, follow the steps below:
    npm start
    ```
 
-This will run the app on http://localhost:5173.
+   This will run the app on http://localhost:5173.
